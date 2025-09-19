@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Вишлист Дюмы</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://i.pinimg.com/736x/40/e3/2d/40e32d4641b4307b66520a938edd3325.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .header {
+            background-color: white;
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .wishlist-items {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            margin-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        .item-block {
+            width: 40%;
+            min-width: 300px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.2s ease-in-out;
+            display: flex;
+            align-items: start;
+        }
+
+        .item-block img {
+            width: 100px;
+            height: auto;
+            object-fit: cover;
+            margin-right: 15px;
+        }
+
+        .item-info {
+            flex-grow: 1;
+            padding: 15px 0;
+            text-align: left;
+        }
+
+        .item-title {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        a.item-link {
+            color: #3498db;
+            text-decoration: none;
+            display: block;
+            margin-top: 10px;
+        }
+
+        footer {
+            height: 50px;
+            background-color: transparent;
+        }
+
+        /* Добавляем размытие к фону */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: inherit;
+            background-size: cover;
+            background-position: center;
+            filter: blur(5px); /* Размытие фона */
+            z-index: -1;
+        }
+
+        /* Новый блок с сообщением */
+        .invitation-notice {
+            background-color: white;
+            width: 100%;
+            text-align: center;
+            padding: 20px 0;
+            border-top: 1px solid #ddd;
+            position: relative;
+            z-index: 1;
+        }
+
+        .invitation-text {
+            font-size: 1.2em;
+            color: #333;
+            margin: 0;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Верхняя шапка -->
+    <div class="header">
+        <h1>ВИШЛИСТ ДЮМЫ</h1>
+    </div>
+
+    <!-- Блоки товаров -->
+    <div class="wishlist-items">
+        <!-- Один элемент списка -->
+        <div class="item-block">
+            <img src="https://cdn2.ohmywishes.com/images/wish-photo/2025/06/29/1CQdQg1aTGByjeziYFH9J6.webp" style="width: 100px; height: auto;" alt="Предмет 1">
+            <div class="item-info">
+                <p class="item-title">Павербанк</p>
+                <a href="#" class="item-link">https://ozon.ru/t/DLBoDeo?utm_source=ohmywishes</a>
+            </div>
+        </div>
+
+        <!-- Остальные элементы повторяются аналогично -->
+        <div class="item-block">
+            <img src="https://cdn2.ohmywishes.com/images/wish-photo/2025/06/29/1CQdPUv7rqAxZpwHkYTGGx.webp" style="width: 100px; height: auto;" alt="Предмет 2">
+            <div class="item-info">
+                <p class="item-title">Шорти</p>
+                <a href="#" class="item-link">https://www.wildberries.ru/catalog/275491383/detail.aspx?utm_source=ohmywishes</a>
+            </div>
+        </div>
+
+        <div class="item-block">
+            <img src="https://basket-10.wbbasket.ru/vol1553/part155304/155304353/images/big/1.webp" style="width: 100px; height: auto;" alt="Предмет 3">
+            <div class="item-info">
+                <p class="item-title">Перчи</p>
+                <a href="#" class="item-link">https://www.wildberries.ru/catalog/155304353/detail.aspx</a>
+            </div>
+        </div>
+
+        <div class="item-block">
+            <img src="https://ir.ozone.ru/s3/multimedia-1-i/wc1000/7484760054.jpg" style="width: 100px; height: auto;" alt="Предмет 4">
+            <div class="item-info">
+                <p class="item-title">Стакан</p>
+                <a href="#" class="item-link">https://ozon.ru/t/EcBzrG5</a>
+            </div>
+        </div>
+
+        <div class="item-block">
+            <img src="https://upload.wikimedia.org/wikipedia/ru/9/91/Silent_Hill_f.jpg" style="width: 100px; height: auto;" alt="Предмет 5">
+            <div class="item-info">
+                <p class="item-title">Silent Hill F</p>
+                <a href="#" class="item-link">https://store.steampowered.com/app/2947440/SILENT_HILL_f/</a>
+            </div>
+        </div>
+
+        <div class="item-block">
+            <img src="https://static2.banki.ru/ugc/ad/7f/54/579917664CnIDIAGlIMANmEKkGI.jpg" style="width: 100px; height: auto;" alt="Предмет 6">
+            <div class="item-info">
+                <p class="item-title">Скиньте денег(</p>
+                <a href="#" class="item-link">+79671549512</a>
+            </div>
+        </div>
+
+        <div class="item-block">
+            <img src="https://c.dns-shop.ru/thumb/st1/fit/500/500/cc2bbb4906b6d4486219fcdd1c82e5c6/cbee08a657d8c1b0abee17265b7e38117119ebfe631bcfa0fcfabc7051d9d5f4.jpg.webp" style="width: 100px; height: auto;" alt="Предмет 6">
+            <div class="item-info">
+                <p class="item-title">Наушники</p>
+                <a href="#" class="item-link">https://www.dns-shop.ru/product/c31ddc615887d582/nausniki-tws-realme-buds-t01-cernyj/?opinion</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Новое белое поле с сообщением -->
+    <div class="invitation-notice">
+        <p class="invitation-text">Получение этого сайта автоматически приравнивается к приглашению на Дюмино ДР</p>
+    </div>
+
+    <!-- Пространство внизу страницы -->
+    <footer></footer>
+
+</body>
+</html>
